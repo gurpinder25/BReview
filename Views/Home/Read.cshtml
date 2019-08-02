@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+
+<h2>Books in database</h2>
+
+@{int i = 0;}
+@foreach (var books in ViewBag.DataArray)
+{
+
+    <table border="0" cellpadding="0" cellspacing="0" style="width:25%;float:left">
+        <tbody>
+
+            @foreach (var item in books)
+            {
+                <tr>
+                    <td>@item</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+
+}
